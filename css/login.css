@@ -1,0 +1,160 @@
+/* Base (Mobile-first, up to 480px) */
+   
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(to right, #ffefeb, #ffe3df);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.login-container {
+  width: 95%;
+  padding: 20px;
+}
+
+.login-box {
+  background: #fff;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.login-box h2 {
+  text-align: center;
+  color: #2c3e50;
+  margin-bottom: 20px;
+  font-size: 20px;
+}
+
+.login-box h2 span {
+  color: #e74c3c;
+}
+
+.input-group {
+  margin-bottom: 15px;
+}
+
+.input-group label {
+  display: block;
+  margin-bottom: 6px;
+  font-weight: 600;
+  color: #333;
+}
+
+.input-group i {
+  margin-right: 5px;
+  color: #e74c3c;
+}
+
+.input-group input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  font-size: 13px;
+}
+
+.input-group input:focus {
+  border-color: #e74c3c;
+}
+
+.password-wrapper {
+  position: relative;
+}
+
+.password-wrapper input {
+  width: 100%;
+  padding-right: 40px;
+  box-sizing: border-box;
+}
+
+#togglePassword {
+  position: absolute;
+  top: 50%;
+  right: 12px;
+  transform: translateY(-50%);
+  cursor: pointer;
+  color: #999;
+  font-size: 16px;
+}
+
+/* Submit Button */
+button[type="submit"] {
+  width: 100%;
+  background: #e74c3c;
+  color: #fff;
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+button[type="submit"]:hover {
+  background: #d63b2d;
+}
+
+/* Sign-up Link */
+.signup-link {
+  margin-top: 15px;
+  text-align: center;
+  font-size: 13px;
+}
+
+.signup-link a {
+  color: #e74c3c;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.signup-link a:hover {
+  text-decoration: underline;
+}
+
+/* Tablet (min-width: 481px) */
+
+@media (min-width: 481px) {
+  .login-container {
+    width: 90%;
+    padding: 25px;
+  }
+
+  .login-box {
+    padding: 25px;
+  }
+
+  .login-box h2 {
+    font-size: 22px;
+  }
+
+  .input-group input {
+    font-size: 14px;
+  }
+
+}
+
+/* Desktop (min-width: 769px) */
+
+@media (min-width: 769px) {
+  .login-container {
+    width: 500px;
+    padding: 20px;
+  }
+
+  .login-box {
+    padding: 40px 30px;
+  }
+
+  .login-box h2 {
+    font-size: 26px;
+    margin-bottom: 30px;
+  }
+
+  .input-group input {
+    font-size: 15px;
+    padding: 10px 12px;
+  }
+}
